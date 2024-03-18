@@ -12,4 +12,60 @@ code {
     monospace;
 }
 
+/* Navbar */
+.navbar{
+  position: fixed;
+  top: 1%;
+  background-color: white;
+  width: 100%;
+  height: 5%;
+}
+
+/* Leistungen */
+.leistungen-container {
+  margin-top: 5%;
+  border: 1px solid black;
+  display: grid; 
+  grid-template-columns: auto; 
+  grid-template-rows: auto; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "little" "text-area"
+    "big" "big"; 
+}
+
+.big {
+  grid-area: big;
+  width: 100%;
+  height: auto;
+}
+
+.little {
+  border: 1px solid black;
+  grid-area: little;
+  width: 50%;
+  height: auto;
+}
+
+.leistungen-header {
+  justify-self: end;
+  border: 1px solid black;
+  grid-area: text-area;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Kontakt */
+.kontakt-container {
+  font-size: big;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Path: kovalenko-website/src/leistungen.css */
