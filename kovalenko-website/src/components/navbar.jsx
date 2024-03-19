@@ -14,9 +14,13 @@ class Navbar extends Component {
                         <a className="nav-link" href="#leistungen">Leistungen</a>
                         <a className="nav-link" href="#kontakt">Kontakt</a>
                         <a className="nav-link" href="#uebermich">Über mich</a>
-                        <a className="nav-link" href="#impressum">Impressum</a>
-                        <p className="nav-link" style={{color: "brown"}}>+49 176 12345678</p>
+                        <a className="nav-link" href="gallery.html">Gallerie</a>
+                        <a className="nav-link" href="impressum.html">Impressum</a>
                         </div>
+                    </div>
+                    <div className="navbar-brand">
+                        <img src="logo192.png" alt="logo" />
+                        <p style={{color: "brown"}}>+49 176 12345678</p>
                     </div>
                  </div>
                 </nav>;

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Leistungen extends Component {
     state = {  } 
     render() { 
-        return <div className="leistungen-container">
+        return <div className="leistungen">
                 <div className="big">
                     <img className="big" src="logo512.png" alt="logo" />
                 </div>
@@ -15,7 +15,7 @@ class Leistungen extends Component {
                 </div>
                 <br />
                 <div className="little">
-                <img src="logo192.png" alt="logo"/>
+                    <img src="logo192.png" alt="logo"/>
                 </div>
             </div>;
     }

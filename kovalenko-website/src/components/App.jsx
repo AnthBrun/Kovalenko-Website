@@ -14,8 +14,8 @@ class App extends Component {
                 <Leistungen/>
                 <Leistungen/>
             </div>
-            <Kontakt/>
             <Uebermich/>
+            <Kontakt/>
             <Footer/>
             </React.Fragment>
         ;

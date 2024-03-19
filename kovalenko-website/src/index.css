@@ -13,6 +13,10 @@ code {
 }
 
 /* Navbar */
+.nav-link:hover {
+  color: #FF5733;
+}
+
 .navbar{
   position: fixed;
   top: 1%;
@@ -21,38 +25,43 @@ code {
   height: 5%;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: beige;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
 /* Leistungen */
-.leistungen-container {
-  margin-top: 5%;
-  border: 1px solid black;
+.leistungen {
+  margin-top: 3%;
   display: grid; 
-  grid-template-columns: auto; 
-  grid-template-rows: auto; 
-  gap: 0px 0px; 
   grid-template-areas: 
-    "little" "text-area"
-    "big" "big"; 
+    "little text-area"
+    "big big"; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 .big {
   grid-area: big;
-  width: 100%;
-  height: auto;
+  justify-self: center;
 }
 
 .little {
-  border: 1px solid black;
   grid-area: little;
-  width: 50%;
-  height: auto;
+  justify-self: center;
 }
 
 .leistungen-header {
-  justify-self: end;
-  border: 1px solid black;
   grid-area: text-area;
-  width: 50%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,4 +77,16 @@ code {
   justify-content: center;
 }
 
-/* Path: kovalenko-website/src/leistungen.css */
+/* Über mich */
+.uebermich {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Impressum */
+
+/* Footer */
+.footer{
+  justify-content: end;
+}

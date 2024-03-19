@@ -5,3 +5,4 @@ import App from './components/App';
 import './index.css';
 
 ReactDOM.render(<App></App>, document.getElementById('root'));
+ReactDOM.render(<App></App>, document.getElementById('impressum'));
