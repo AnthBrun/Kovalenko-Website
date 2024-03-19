@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Uebermich extends Component {
     state = {  } 
     render() { 
-        return <div className="uebermich">
+        return <div id="#uebermich" className="uebermich">
             <div className="ubermich-header">
                 <h2>Über mich</h2>
                 <p>Mein Name ist Eduard Kovalenko ich bin ein Fliesenleger und Innenausbauer.</p>

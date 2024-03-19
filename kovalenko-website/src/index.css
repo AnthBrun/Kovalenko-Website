@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: beige;
 }
 
 code {
@@ -12,81 +13,231 @@ code {
     monospace;
 }
 
-/* Navbar */
-.nav-link:hover {
-  color: #FF5733;
+@media screen and (max-width: 600px){
+
+  /* Navbar */
+
+  .container-fluid {
+    background-color: beige;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand a {
+    color: brown;
+    text-decoration: none;
+  }
+
+  /* Leistungen */
+  .leistungen {
+    margin-top: 10%;
+    display: grid; 
+    grid-template-areas: 
+      "little text-area"
+      "big big"; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big {
+    grid-area: big;
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  .little {
+    grid-area: little;
+    justify-self: start;
+  }
+
+  .leistungen-header {
+    grid-area: text-area;
+    justify-self: center;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Kontakt */
+  .kontakt-container {
+    font-size: big;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Über mich */
+  .uebermich {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Gallery */
+  .gallery-container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: minmax(1fr, 100%) minmax(1fr, 100%);
+    grid-template-rows: minmax(1fr, 100%) minmax(1fr, 100%);
+    grid-gap: 10px;
+    margin-top: 3%;
+    justify-items: center;
+  }
+
+  .gallery-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Impressum */
+  .impressum-container {
+    margin-top: 15%;
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .Haftungsausschluss {
+    border: 2px solid black;
+    background-color: white;
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 6%;
+  }
+
+  /* Footer */
+  .footer{
+    justify-content: end;
+  }
 }
 
-.navbar{
-  position: fixed;
-  top: 1%;
-  background-color: white;
-  width: 100%;
-  height: 5%;
-}
+@media screen and (min-width: 600px) {
+  /* Navbar */
+  .nav-link:hover {
+    color: #FF5733;
+  }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  color: beige;
-}
+  .navbar{
+    position: fixed;
+    top: 1%;
+    background-color: white;
+    width: 100%;
+    height: 5%;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
 
-.navbar-brand img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 
-/* Leistungen */
-.leistungen {
-  margin-top: 3%;
-  display: grid; 
-  grid-template-areas: 
-    "little text-area"
-    "big big"; 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-}
+  .navbar-brand a {
+    color: brown;
+    text-decoration: none;
+  }
 
-.big {
-  grid-area: big;
-  justify-self: center;
-}
+  .navbar-brand a:hover {
+    text-decoration: underline;
+  }
 
-.little {
-  grid-area: little;
-  justify-self: center;
-}
+  /* Leistungen */
+  .leistungen {
+    margin-top: 3%;
+    display: grid; 
+    grid-template-areas: 
+      "little text-area"
+      "big big"; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 
-.leistungen-header {
-  grid-area: text-area;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .big {
+    grid-area: big;
+    justify-self: center;
+  }
 
-/* Kontakt */
-.kontakt-container {
-  font-size: big;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .little {
+    grid-area: little;
+    justify-self: center;
+  }
 
-/* Über mich */
-.uebermich {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  .leistungen-header {
+    grid-area: text-area;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Impressum */
+  /* Kontakt */
+  .kontakt-container {
+    font-size: big;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Footer */
-.footer{
-  justify-content: end;
+  /* Über mich */
+  .uebermich {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Gallery */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 3%;
+    justify-items: center;
+  }
+
+  /* Impressum */
+  .impressum-container {
+    margin-top: 3%;
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .Haftungsausschluss {
+    border: 2px solid black;
+    background-color: white;
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 6%;
+  }
+
+  /* Footer */
+  .footer{
+    justify-content: end;
+  }
 }

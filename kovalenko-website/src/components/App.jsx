@@ -9,16 +9,15 @@ class App extends Component {
     state = {  } 
     render() { 
         return <React.Fragment>
-            <Navbar/>
-            <div className="leistungen-container">
-                <Leistungen/>
-                <Leistungen/>
-            </div>
-            <Uebermich/>
-            <Kontakt/>
-            <Footer/>
-            </React.Fragment>
-        ;
+                <Navbar/>
+                <div id="#leistungen" className="leistungen-container">
+                    <Leistungen/>
+                    <Leistungen/>
+                </div>
+                <Uebermich/>
+                <Kontakt/>
+                <Footer/>
+            </React.Fragment>;
     }
 }
 
