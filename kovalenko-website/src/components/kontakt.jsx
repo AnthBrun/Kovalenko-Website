@@ -5,8 +5,8 @@ class Kontakt extends Component {
     render() { 
         return <div className="kontakt-container" id="#kontakt">
             <h2>Kontakt</h2>
-            <p>Telefon: <a href="tel:0176 12345678">0176 12345678</a></p>
-            <p>Email: <a href="mailto:edd-k@hotmail.de">edd-k@hotmail.de</a></p>
+            <p>Telefon <a href="tel:015906226250">0159 06226250</a></p>
+            <p>Email: <a href="mailto:haase.sascha89@gmail.com">haase.sascha89@gmail.com</a></p>
         </div>;
     }
 }

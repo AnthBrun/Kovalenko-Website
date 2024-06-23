@@ -5,17 +5,20 @@ class Leistungen extends Component {
     render() { 
         return <div className="leistungen">
                 <div className="big">
-                    <img className="big" src="logo512.png" alt="logo" />
+                    <img className="big" src="Einfahrt.jpeg" alt="logo" />
                 </div>
                 <div className="leistungen-header">
-                    <p>Ich lege Fliesen.</p>
-                    <p>Ich mache Innenausbau.</p>
-                    <p>Ich verbaue neue Duschen.</p>
-                    <p>Ich verlege Laminat.</p>
+                    <p style={{textDecoration: "underline"}}>Individueller Gartenservice:</p>
+                    <p>- Neu- und Umgestaltung</p>
+                    <p>- Pflasterarbeiten</p>
+                    <p>- Terassenbau</p>
+                    <p>- Zaunarbeiten</p>
+                    <p>- Gehwegreinigung</p>
+                    <p>- Winterdienst</p>
                 </div>
                 <br />
                 <div className="little">
-                    <img src="logo192.png" alt="logo"/>
+                    <img src="Pflaster.jpeg" alt="logo"/>
                 </div>
             </div>;
     }

@@ -5,13 +5,12 @@ import Kontakt from './kontakt';
 import Footer from './footer';
 import Uebermich from './uebermich';
 
-class App extends Component {
+class Router extends Component {
     state = {  } 
     render() { 
         return <React.Fragment>
                 <Navbar/>
                 <div id="#leistungen" className="leistungen-container">
-                    <Leistungen/>
                     <Leistungen/>
                 </div>
                 <Uebermich/>
@@ -22,4 +21,4 @@ class App extends Component {
 }
 
  
-export default App;
+export default Router;
