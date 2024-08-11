@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class Leistungen extends Component {
-    state = {  } 
-    render() { 
+    state = {  }
+    render() {
         return <div className="leistungen">
                 <div className="big">
                     <img className="big" src="Einfahrt.jpeg" alt="logo" />
@@ -18,10 +18,10 @@ class Leistungen extends Component {
                 </div>
                 <br />
                 <div className="little">
-                    <img src="Pflaster.jpeg" alt="logo"/>
+                    <img src="Rasengittersteine.jpeg" alt="logo"/>
                 </div>
             </div>;
     }
 }
- 
+
 export default Leistungen;

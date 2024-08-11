@@ -4,7 +4,7 @@ const importImages = (requireContext) => {
     return requireContext.keys().map(requireContext);
 }
 
-const images = importImages(require.context('../images', false, /\.(png|jpe?g)$/));
+const images = importImages(require.context('../images_gallery', false, /\.(png|jpe?g)$/));
 
 class Gallery extends Component {
     state = {  }

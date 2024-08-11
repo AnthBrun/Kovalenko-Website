@@ -20,8 +20,8 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <AnchorLink className="nav-link" href="/#leistungen">Leistungen</AnchorLink>
-                            <AnchorLink className="nav-link" href="/#kontakt">Kontakt</AnchorLink>
                             <AnchorLink className="nav-link" href="/#uebermich">Über mich</AnchorLink>
+                            <AnchorLink className="nav-link" href="/#kontakt">Kontakt</AnchorLink>
                             <a className="nav-link" href="/gallery">Gallerie</a>
                             <a className="nav-link" href="/impressum">Impressum</a>
                         </div>
