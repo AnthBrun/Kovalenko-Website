@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 class Navbar extends Component {
-    state = { 
+    state = {
         isCollapsed: true
-     } 
+     }
 
      handleLinkClick = () => {
         this.setState({isCollapsed: true});
      }
 
-    render() { 
+    render() {
         return <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onClick={() => this.setState({ isCollapsed: true})}>
@@ -35,5 +34,5 @@ class Navbar extends Component {
                 </nav>;
         };
     }
- 
+
 export default Navbar;
