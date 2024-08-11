@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 
 class Impressum extends Component {
-    state = {  } 
-    render() { 
+    state = {  }
+    render() {
         return <div className='impressum-container'><h1>Impressum</h1>
             <p>Angaben gemäß § 5 TMG</p>
-            <p>Eduard Kovalenko <br />
-                Auf der Heu 10 <br />
-                14513 Waldeck-Höringhausen <br />
-            </p>
-            <p> <strong>Vertreten durch: </strong>
-                Max Muster
+            <p>Sascha Haase <br />
+                Ramser Weg 5 <br />
+                34474 Diemelstadt-Wrexen <br />
             </p>
             <p><strong>Kontakt:</strong><br />
                 Telefon: 01234-789456 <br />
@@ -21,7 +18,7 @@ class Impressum extends Component {
                 Eintragung im Registergericht: Musterstadt <br />
                 Registernummer: 12345 <br />
             </p>
-            <p><strong>Umsatzsteuer-ID: </strong> 
+            <p><strong>Umsatzsteuer-ID: </strong>
                 Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid. <br />
                 <strong>Wirtschafts-ID: </strong>
                 Musterwirtschaftsid <br />
@@ -40,5 +37,5 @@ class Impressum extends Component {
          ;
     }
 }
- 
+
 export default Impressum;

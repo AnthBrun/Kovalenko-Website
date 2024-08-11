@@ -4,15 +4,17 @@ const importImages = (requireContext) => {
     return requireContext.keys().map(requireContext);
 }
 
-const images = importImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+const images = importImages(require.context('../images', false, /\.(png|jpe?g)$/));
 
 class Gallery extends Component {
-    state = {  } 
-    render() { 
+    state = {  }
+    render() {
         return <div className="gallery-container">
-                
-            </div>;
+                {images.map((image, index) => (
+                    <img key={index} className='gallery-images' src={image} alt={`${index}`} />
+                ))}
+            </div>
     }
 }
- 
+
 export default Gallery;

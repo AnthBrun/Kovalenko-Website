@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 class Uebermich extends Component {
-    state = {  } 
-    render() { 
+    state = {  }
+    render() {
         return <div id="#uebermich" className="uebermich">
             <div className="ubermich-header">
                 <h2>Über mich</h2>
-                <p>Mein Name ist Eduard Kovalenko ich bin ein Fliesenleger und Innenausbauer.</p>
-                <p>Ich bin 48 Jahre alt und habe eine Ausbildung als Maler und Lackierer.</p>
-                <p>Ich arbeite bereits seit 5 Jahren als selbständiger Fliesenleger.</p>
+                <p>Mein Name ist Sacha Haase, ich bin ein Garten- und Landschaftsbauer.</p>
+                <p>Ich habe eine Ausbildung als Straßenbauer abgeschlossen.</p>
+                <p>Ich arbeite bereits seit 6 Monaten selbstständig.</p>
                 </div>
             <div className="portrait">
                 <img src="logo192.png" alt="portrait"/>
@@ -16,5 +16,5 @@ class Uebermich extends Component {
         </div>;
     }
 }
- 
+
 export default Uebermich;

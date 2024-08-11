@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class ShortNavbar extends Component {
-    state = {  } 
-    render() { 
+    state = {  }
+    render() {
         return <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,18 +10,18 @@ class ShortNavbar extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="nav-link active" aria-current="page" href="/">Startseite</a>
+                    <a className="nav-link" aria-current="page" href="/">Startseite</a>
                     <a className="nav-link" href="/gallery">Gallerie</a>
                     <a className="nav-link" href="/impressum">Impressum</a>
                 </div>
             </div>
             <div className="navbar-brand">
-                <img src="logo192.png" alt="logo" />
+                <img src="logo_big.jpg" alt="logo" />
                 <p><a href="tel:0176 12345678">+49 176 12345678</a></p>
             </div>
          </div>
         </nav>;
     };
 }
- 
+
 export default ShortNavbar;
