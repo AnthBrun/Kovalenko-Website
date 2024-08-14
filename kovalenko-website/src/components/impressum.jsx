@@ -10,9 +10,8 @@ class Impressum extends Component {
                 34474 Diemelstadt-Wrexen <br />
             </p>
             <p><strong>Kontakt:</strong><br />
-                Telefon: 01234-789456 <br />
-                Fax: 1234-56789 <br />
-                E-Mail: <a href='mailto:edd-k@hotmail.de'>edd-k@hotmail.de</a>
+                Telefon: 0159 06226250 <br />
+                E-Mail: <a href="mailto:haase.sascha89@gmail.com">haase.sascha89@gmail.com</a>
             </p>
             <p><strong>Registereintrag: </strong> <br />
                 Eintragung im Registergericht: Musterstadt <br />

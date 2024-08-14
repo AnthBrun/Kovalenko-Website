@@ -19,21 +19,34 @@ code {
   /* Navbar */
 
   .container-fluid {
-    background-color: darkgreen;
+    background-color: black;
     position: fixed;
     top: 0%;
     width: 100%;
     height: auto;
   }
 
+  .navbar-nav a {
+    color: white;
+  }
+
   .navbar-nav .nav-link:hover {
-    color: white !important;
+    color: white;
     text-decoration: underline;
   }
 
   .navbar-brand {
     display: flex;
     align-items: center;
+  }
+
+  .navbar-brand a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-brand a:hover {
+    text-decoration: underline;
   }
 
   .navbar-brand img {
@@ -45,31 +58,24 @@ code {
   /* Leistungen */
   .leistungen {
     margin-top: 10%;
-    display: grid;
-    grid-template-areas:
-      "little text-area"
-      "big big";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
   }
 
   .big {
-    display: inline-block;
+    margin-top: 1em;
     justify-self: center;
-    width: 80%;
+    max-width: 100vw;
   }
 
   .little {
-    justify-self: start;
-    width: 80%;
+    max-width: 100vw;
+    display:none;
   }
 
   .leistungen-header {
-    grid-area: text-area;
+    margin: 1em;
     justify-self: center;
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +84,6 @@ code {
 
   /* Kontakt */
   .kontakt-container {
-    font-size: big;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,24 +92,27 @@ code {
 
   /* Über mich */
   .uebermich {
-    margin: 100em;
+    margin-left: 2em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    max-width: 100vw;
     justify-content: center;
   }
 
   /* Gallery */
   .gallery-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    margin-top: 2em;
+    justify-items: center;
+  }
+
+  .gallery-container img {
     width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    max-height: 100%;
+    margin-bottom: 1em;
+    object-fit: cover;
+  }
 
   /* Impressum */
   .impressum-container {
@@ -123,8 +131,8 @@ code {
   }
 
   /* Footer */
-  .footer{
-    justify-content: end;
+  .footer {
+    display: none;
   }
 }
 
