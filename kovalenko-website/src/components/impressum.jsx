@@ -6,7 +6,7 @@ class Impressum extends Component {
         return <div className='impressum-container'><h1>Impressum</h1>
             <p>Angaben gemäß § 5 TMG</p>
             <p>Sascha Haase <br />
-                Ramser Weg 5 <br />
+                Ramser Straße 9 <br />
                 34474 Diemelstadt-Wrexen <br />
             </p>
             <p><strong>Kontakt:</strong><br />

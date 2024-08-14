@@ -11,7 +11,7 @@ class Uebermich extends Component {
                 <p>Ich arbeite bereits seit 6 Monaten selbstständig.</p>
                 </div>
             <div className="uebermich_image">
-                <img id="uebermich_logo" src="logo_small.png" alt="logo"/>
+                <img id="uebermich_logo" src="logo_big.jpg" alt="logo"/>
             </div>
         </div>;
     }

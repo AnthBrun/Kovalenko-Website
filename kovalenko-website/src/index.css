@@ -92,11 +92,22 @@ code {
 
   /* Über mich */
   .uebermich {
-    margin-left: 2em;
     display: flex;
     flex-direction: column-reverse;
     max-width: 100vw;
-    justify-content: center;
+    text-align: center;
+  }
+
+  .uebermich-header {
+    margin-top: 1em;
+  }
+
+  .uebermich p {
+    text-align: start;
+  }
+
+  .uebermich img {
+    width: 60%;
   }
 
   /* Gallery */
@@ -109,7 +120,7 @@ code {
 
   .gallery-container img {
     width: 100vw;
-    max-height: 100%;
+    max-height: 159.383px;
     margin-bottom: 1em;
     object-fit: cover;
   }
@@ -231,6 +242,15 @@ code {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100vw;
+  }
+
+  .uebermich h2 {
+    text-align: center;
+  }
+
+  .uebermich img {
+    width: 20vw;
   }
 
   /* Gallery */

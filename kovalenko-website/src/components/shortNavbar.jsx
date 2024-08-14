@@ -17,7 +17,7 @@ class ShortNavbar extends Component {
             </div>
             <div className="navbar-brand">
                 <img src="logo_big.jpg" alt="logo" />
-                <p><a href="tel:0176 12345678">+49 176 12345678</a></p>
+                <p><a href="tel:015906226250">+49 159 06226250</a></p>
             </div>
          </div>
         </nav>;
